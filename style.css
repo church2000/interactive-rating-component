@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1.3rem;
+  color: hsl(217, 12%, 63%);
+}
+article {
+  background-image: linear-gradient(
+    0deg,
+    hsl(216deg 25.81% 18.4%),
+    hsl(213, 19%, 18%)
+  );
+  padding: 1.2rem;
+  border-radius: 1rem;
+  max-width: 333.41px;
+}
+.star {
+  border-radius: 50px;
+  padding: 0.75rem;
+  background-color: hsl(213deg 14.35% 25.47%);
+}
+h1 {
+  color: hsl(0, 100%, 100%);
+  line-height: 2;
+}
+p {
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+#input-section {
+  visibility: hidden;
+}
+#one,
+#two,
+#three,
+#four,
+#five {
+  opacity: 0;
+}
+.form-design {
+  border-radius: 50px;
+  padding: 0.75rem;
+  background-color: hsl(213deg 14.35% 25.47%);
+  display: flex;
+  width: 42px;
+  align-items: center;
+  justify-content: center;
+}
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input:checked + label {
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(213deg 14.35% 25.47%);
+}
+input:focus-visible + label {
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(213deg 14.35% 25.47%);
+  outline: 2px solid hsl(213, 19%, 18%);
+  outline-offset: 5px;
+}
+.form-design:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+#submit {
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+}
+#submit:hover {
+  background-color: hsl(0, 100%, 100%);
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-p {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: hsl(213deg 14.35% 25.47%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 2rem;
+}
+.appreciation-message {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
